@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+ {% block content %}
+
+
+    <div class="custom-container my:5">
+        <div class="row align-items-center w-100">
+
+            <div class="col-md-4 text-center">
+                 <img src="{{url_for('static', filename='uploads/' + my_user.image)}}" class="img-fluid rounded shadow" alt="{{ my_user.first_name }}" style="max-height: 400px; width: 70%; object-fit: cover;">
+            </div>
+
+            <div class="col-md-8">
+                <h2>About Me</h2>
+                <p>
+                    I'm {{ my_user. first_name}} {{ my_user. last_name}}, Computer Science graduate skilled in Python, full-stack development, and modern frameworks, passionate
+                    about designing efficient software solutions. Committed to continuous learning, innovation, and
+                    contributing to scalable projects while growing a software professional.
+                <h2>Email</h2>
+
+                {{ my_user.email}}
+                </p>
+                <div class="product-category mb-3">
+                    <h2> And this is my Books </h2>
+                    {% for book in my_user.books %}
+                    <h4>  <a href="{{ url_for('detail',book_id=book.id)}}" ><h5 class="card-title">{{ book.name }}</h5></a> </h4>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock content %}

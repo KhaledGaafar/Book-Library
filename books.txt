@@ -1,0 +1,14 @@
+{
+    "1": ["The Great Gatsby", "A classic novel by F. Scott Fitzgerald exploring the decadence and excess of the Jazz Age.", "1.jpg", 15.99],
+    "2": ["To Kill a Mockingbird", "Harper Lee's Pulitzer Prize-winning novel about racial injustice in the American South.", "2.jpg", 12.99],
+    "3": ["1984", "George Orwell's dystopian novel depicting a totalitarian regime and the consequences of total surveillance.", "3.jpg", 10.99],
+    "4": ["Pride and Prejudice", "Jane Austen's romantic novel about the societal pressures of marriage and class in 19th-century England.", "4.jpg", 9.99],
+    "5": ["The Catcher in the Rye", "J.D. Salinger's novel about teenage rebellion and alienation, told through the eyes of Holden Caulfield.", "5.jpg", 11.99],
+    "6": ["The Hobbit", "J.R.R. Tolkien's fantasy novel about Bilbo Baggins and his adventure to reclaim treasure guarded by a dragon.", "6.jpg", 14.99],
+    "7": ["Moby Dick", "Herman Melville's epic tale of Captain Ahab's obsessive quest for revenge against the white whale, Moby Dick.", "7.jpg", 13.99],
+    "8": ["The Alchemist", "Paulo Coelho's philosophical novel about a young shepherd's journey to discover his personal legend.", "8.jpg", 10.99],
+    "9": ["The Lord of the Rings", "J.R.R. Tolkien's epic fantasy trilogy about the quest to destroy the One Ring and defeat the Dark Lord Sauron.", "4.jpg", 19.99],
+    "10": ["Brave New World", "Aldous Huxley's dystopian novel exploring a futuristic society driven by technological control and consumerism.", "1.jpg", 11.99],
+    "11": ["The Odyssey", "Homer's ancient Greek epic poem about Odysseus's long journey home after the Trojan War.", "3.jpg", 9.99],
+    "12": ["Frankenstein", "Mary Shelley's Gothic novel about a scientist who creates a sentient creature in an unorthodox experiment.", "2.jpg", 8.99]
+}

@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+ {% block content %}
+
+<div class="container my-5">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="product-image">
+                <img src="{{url_for('static', filename='uploads/' + book.image)}}" class="img-fluid rounded shadow" alt="{{ book.name }}" style="max-height: 500px; width: 100%; object-fit: cover;">
+            </div>
+        </div>
+        <div class="col-md-6">
+              <div class="product-category mb-3">
+                    <h4><a href="{{url_for('edit',book_id=book.id)}}">  <span class="badge bg-secondary">Edit</span></a></h4>
+                    <h4><a href="{{url_for('delete_book',book_id=book.id)}}">  <span class="badge bg-secondary">Delete</span></a></h4>
+
+                </div>
+            <div class="product-details">
+                <h1 class="product-title mb-3">{{ book. name}}</h1>
+                 <div class="product-price mb-3">
+                    <h2 class="text-primary">publish_date:<h4>${{ book.publish_date }}</h4></h2>
+                </div>
+                </div>
+                <div class="product-price mb-3">
+                    <h2 class="text-primary">${{ book.price }}</h2>
+                </div>
+                <div class="product-category mb-3">
+                    <h2 class="text-primary">Author</h2>
+                    <h4><a href="{{url_for('user_detail',id=book.user.id)}}">  <span class="badge bg-secondary">{{ book.user.first_name }}</span></a></h4>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
